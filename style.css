@@ -1,0 +1,55 @@
+* {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#Board {
+    padding-top: 10px;
+    margin: 10px;
+    border-bottom: 20px solid lightgreen;
+    background-image: url('a3.jpg');
+    background-size: cover; /* ทำให้ภาพพื้นหลังครอบคลุมพื้นที่ทั้งหมด */
+    background-repeat: no-repeat; /* ป้องกันการทำซ้ำของภาพพื้นหลัง */
+    background-position: center center; /* จัดตำแหน่งของภาพพื้นหลังให้อยู่ตรงกลาง */
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+}
+
+#RetryButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #abb60f;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: block;
+}
+
+#RetryButton:hover {
+    background-color: #1284b1;
+}
+
+#Reload {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+}
+
+.title {
+    font-size: 50px;
+    background-color: lightblue;
+    border: black solid 2px;
+    margin-bottom: 20px;
+}
