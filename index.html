@@ -1,27 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakonvat Plianchroen | Online Resume</title>
+  <style>
+    :root { --accent: #2f5bea; --text: #1f2430; --muted: #6b7280; --bg: #f5f6fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+    header { background: var(--accent); color: #fff; border-radius: 12px; padding: 28px 24px; }
+    header h1 { margin: 0 0 4px; font-size: 1.9rem; }
+    header p { margin: 2px 0; opacity: .92; }
+    section { background: #fff; border-radius: 12px; padding: 20px 24px; margin-top: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+    h2 { margin: 0 0 10px; font-size: 1.1rem; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
+    .item { margin-bottom: 14px; }
+    .item:last-child { margin-bottom: 0; }
+    .item h3 { margin: 0; font-size: 1rem; }
+    .meta { color: var(--muted); font-size: .9rem; }
+    ul { margin: 6px 0 0; padding-left: 20px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; list-style: none; }
+    .tags li { background: #eef2ff; color: var(--accent); padding: 4px 12px; border-radius: 999px; font-size: .9rem; }
+    footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 24px; }
+  </style>
 </head>
 <body>
-    <h1 class="title"> Nobita go </h1>
-    <div class="Board">
-        <canvas id = "Board"></canvas>
-    </div>
+  <div class="wrap">
+    <header>
+      <h1>Sakonvat Plianchroen</h1>
+      <p>Accounting Student, University of the Thai Chamber of Commerce</p>
+      <p>Address: 99/262 Rama 2 Road, Samut Sakhon, Thailand</p>
+    </header>
 
-    <br>
+    <section>
+      <h2>Profile Statement</h2>
+      <p>A hardworking and friendly second-year accounting student with hands-on experience in customer service from working part-time in a restaurant. I learn quickly, work well in a team, and enjoy using technology to learn new things. I am looking for opportunities to develop my skills and gain more real-world experience.</p>
+    </section>
 
-    <div class="Retry">
+    <section>
+      <h2>Work Experience</h2>
+      <div class="item">
+        <h3>Part-time Staff, Restaurant</h3>
+        <div class="meta">2–3 months</div>
+        <ul>
+          <li>Served customers and provided friendly, helpful service.</li>
+          <li>Worked with a team in a fast-paced environment.</li>
+          <li>Developed time management and communication skills.</li>
+        </ul>
+      </div>
+    </section>
 
-        <button id="RetryButton" class="RetryButton">Retry</button>
-    
-    </div>
-    <br>
-    <a href="index.html">restart</a>
-    <script src="script.js"></script>
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Bachelor of Accounting, Faculty of Accountancy</h3>
+        <div class="meta">University of the Thai Chamber of Commerce (UTCC) | Second-year student</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Interests / Hobbies</h2>
+      <ul class="tags">
+        <li>Playing games</li>
+        <li>Listening to music</li>
+      </ul>
+    </section>
+
+    <footer>&copy; 2026 Sakonvat Plianchroen</footer>
+  </div>
 </body>
 </html>
